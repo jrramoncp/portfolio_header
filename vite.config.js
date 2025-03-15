@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: 'personal_portfolio_header', 
+  base: '/personal_portfolio_header', 
 });
