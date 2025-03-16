@@ -2,8 +2,8 @@
 @use '../abstract/_mixins' as m;
 
 .main__content{
-    max-width: 50%;
     .hero{
+        max-width: 60%;
         .hero__subtitle{
             font-size: 20px;
             font-weight: normal; 
