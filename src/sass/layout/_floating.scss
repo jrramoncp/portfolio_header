@@ -2,5 +2,53 @@
 @use '../abstract/_mixins' as m;
 
 .floating{
-    display: none;
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    right: -100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/background-luxe.png);
+    article{
+        background-color: white;
+        gap: 15px;
+        display: flex;
+        border-radius: 24px;
+        padding: 24px;
+        position: absolute;
+        filter: drop-shadow(rgba(0,0,0, .25) 1em 0.5em 15px);
+        img{
+            max-width: 50px;
+        }
+        .floating__info{
+            h4{
+                font-size: 22px;
+                font-weight: 300;
+            }
+
+            p{
+                font-size: 14px;
+                color: v.$color-grey;
+            };
+        }
+    }
+
+    //FLOATING POSITION AND SHADOW
+
+    .floating__one{
+        top: 80px;
+    }
+
+    .floating__two{
+        right: -60px;
+        top: 150px;
+        
+    }
+
+    .floating__three{
+        bottom: 220px;
+        right: 0px;
+    }
+
+
 }
