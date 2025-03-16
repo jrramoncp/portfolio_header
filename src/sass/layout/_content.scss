@@ -1,0 +1,46 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+.main__content{
+    max-width: 50%;
+    .hero{
+        .hero__subtitle{
+            font-size: 20px;
+            font-weight: normal; 
+        }
+
+        .hero__title{
+            font-family: v.$title-font;
+            font-size: 110px;
+            .highlight{
+                font-size: 110px;
+                color: v.$color-red;
+                font-family: v.$title-font;
+            }
+        }
+
+        .hero__description{
+            font-size: 20px;
+        }
+
+        .hero__btn{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            display: inline-block;
+            background-color: v.$color-red;
+            border-radius: 32px;
+            padding: 15px 25px;
+            color: white;
+            text-decoration: none;
+            transition: ease 0.5s;
+
+            &:hover{
+                background-color: v.$color-black;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 15px 50px;
+            }
+        }
+    }
+
+}
